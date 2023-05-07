@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    """Modulus"""
+   """Modulus"""
     return '<h1>Hello WSB! Greetings from Flask!</h1>'
 
 
