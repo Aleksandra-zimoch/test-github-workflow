@@ -16,13 +16,13 @@ jobs:
   pylint:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
+    - name: Sprawdź Kod
       uses: actions/checkout@v2
-    - name: Set up Python
+    - name: Skonfiguruj Pythona
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-    - name: Install dependencies
+    - name: Zainstaluj zależności
       run: pip install -r requirements.txt
-    - name: Run Pylint
+    - name: Wystartuj Pylint
       run: pylint app.py
